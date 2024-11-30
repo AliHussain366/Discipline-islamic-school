@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discipline Islamic School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="#admissions" class="cta-button">Enroll Now</a>
+
+            <div class="logo">
+                <h1>Discipline Islamic School</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#management">School Management</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Discipline Islamic School</h2>
+            <p>Empowering students with Islamic values and modern education.</p>
+            <a href="#admissions" class="cta-button">Enroll Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide a balanced education system blending modern knowledge with Islamic teachings to nurture our students into responsible citizens.</p>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>Discover our admission process for the upcoming academic year.</p>
+        </div>
+    </section>
+
+    <!-- School Management System -->
+    <section id="management" class="management">
+        <div class="container">
+            <h2>School Management System</h2>
+
+            <!-- Add Fee Management -->
+            <div id="feeManagement" class="management-feature">
+                <h3>Fee Management</h3>
+                <form id="feeForm">
+                    <label for="studentFeeName">Student Name:</label>
+                    <input type="text" id="studentFeeName" required>
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" required>
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" id="dueDate" required>
+                    <button type="submit">Add Fee</button>
+                </form>
+            </div>
+
+            <!-- Add Timetable Management -->
+            <div id="timetable" class="management-feature">
+                <h3>Timetable Management</h3>
+                <form id="timetableForm">
+                    <label for="className">Class:</label>
+                    <input type="text" id="className" required>
+                    <label for="day">Day:</label>
+                    <select id="day" required>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                    </select>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" required>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" required>
+                    <button type="submit">Add Timetable</button>
+                </form>
+            </div>
+
+            <!-- Add Library Management -->
+            <div id="library" class="management-feature">
+                <h3>Library Management</h3>
+                <form id="libraryForm">
+                    <label for="bookTitle">Book Title:</label>
+                    <input type="text" id="bookTitle" required>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" required>
+                    <label for="issuedTo">Issued To (Student):</label>
+                    <input type="text" id="issuedTo">
+                    <label for="returnDate">Return Date:</label>
+                    <input type="date" id="returnDate">
+                    <button type="submit">Add Book</button>
+                </form>
+            </div>
+
+            <!-- Add Parent Details -->
+            <div id="parentDetails" class="management-feature">
+                <h3>Parent/Guardian Details</h3>
+                <form id="parentForm">
+                    <label for="parentName">Parent Name:</label>
+                    <input type="text" id="parentName" required>
+                    <label for="student">Student:</label>
+                    <input type="text" id="student" required>
+                    <label for="contact">Contact Number:</label>
+                    <input type="text" id="contact" required>
+                    <button type="submit">Save Parent Details</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you. Reach out with any questions!</p>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Discipline Islamic School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
